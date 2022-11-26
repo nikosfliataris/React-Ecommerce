@@ -23,6 +23,9 @@ function Sidebar() {
         <ul className="links">
           <ul className="nav-links">
             <link>
+              <a href="/">home</a>
+            </link>
+            <link>
               <a href="/about">about</a>
             </link>
             <link>

@@ -24,6 +24,9 @@ function Nav() {
         </div>
         <ul className="nav-links">
           <link>
+            <a href="/">home</a>
+          </link>
+          <link>
             <a href="/about">about</a>
           </link>
           <link>
