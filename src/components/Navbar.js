@@ -22,7 +22,7 @@ function Nav() {
             <FaBars />
           </button>
         </div>
-        <ul className="links">
+        <ul className="nav-links">
           <li>
             <Link to="/">home</Link>
           </li>
@@ -37,8 +37,8 @@ function Nav() {
               <Link to="/checkout">checkout</Link>
             </li>
           )}
-          <CartButtons />
         </ul>
+        <CartButtons />
       </div>
     </nav>
   );
