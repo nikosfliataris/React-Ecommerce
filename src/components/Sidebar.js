@@ -21,18 +21,20 @@ function Sidebar() {
           </button>
         </div>
         <ul className="links">
-          {links.map((link) => (
-            <li key={link.id}>
-              <Link to={link.url} onClick={CloseSideBar}>
-                {link.text}
-              </Link>
-            </li>
-          ))}
-          {myUser && (
-            <li>
-              <Link to="/checkout">Checkout</Link>
-            </li>
-          )}
+          <ul className="nav-links">
+            <link>
+              <a href="/about">about</a>
+            </link>
+            <link>
+              <a href="/products">products</a>
+            </link>
+
+            {myUser && (
+              <li>
+                <Link to="/checkout">checkout</Link>
+              </li>
+            )}
+          </ul>
 
           <CartButtons />
         </ul>
