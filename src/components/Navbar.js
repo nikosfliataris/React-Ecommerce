@@ -23,11 +23,13 @@ function Nav() {
           </button>
         </div>
         <ul className="nav-links">
-          {links.map((link) => (
-            <li key={link.id}>
-              <a href={link.url}>{link.text}</a>
-            </li>
-          ))}
+          <link>
+            <a href="/about">about</a>
+          </link>
+          <link>
+            <a href="/products">products</a>
+          </link>
+
           {myUser && (
             <li>
               <Link to="/checkout">checkout</Link>
