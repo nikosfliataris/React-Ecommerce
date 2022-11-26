@@ -21,24 +21,20 @@ function Sidebar() {
           </button>
         </div>
         <ul className="links">
-          <ul className="nav-links">
-            <link>
-              <a href="/">home</a>
-            </link>
-            <link>
-              <a href="/about">about</a>
-            </link>
-            <link>
-              <a href="/products">products</a>
-            </link>
-
-            {myUser && (
-              <li>
-                <Link to="/checkout">checkout</Link>
-              </li>
-            )}
-          </ul>
-
+          <li>
+            <Link to="/">home</Link>
+          </li>
+          <li>
+            <Link to="/about">about</Link>
+          </li>
+          <li>
+            <Link to="/products">products</Link>
+          </li>
+          {myUser && (
+            <li>
+              <Link to="/checkout">checkout</Link>
+            </li>
+          )}
           <CartButtons />
         </ul>
       </aside>

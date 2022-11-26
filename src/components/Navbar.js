@@ -22,24 +22,23 @@ function Nav() {
             <FaBars />
           </button>
         </div>
-        <ul className="nav-links">
-          <link>
-            <a href="/">home</a>
-          </link>
-          <link>
-            <a href="/about">about</a>
-          </link>
-          <link>
-            <a href="/products">products</a>
-          </link>
-
+        <ul className="links">
+          <li>
+            <Link to="/">home</Link>
+          </li>
+          <li>
+            <Link to="/about">about</Link>
+          </li>
+          <li>
+            <Link to="/products">products</Link>
+          </li>
           {myUser && (
             <li>
               <Link to="/checkout">checkout</Link>
             </li>
           )}
+          <CartButtons />
         </ul>
-        <CartButtons />
       </div>
     </nav>
   );
